@@ -73,7 +73,7 @@
       // Inside the loop...
 
       // 2. Create a variable named "letterBtn" equal to $("<button>");
-        letterBtn = $("#buttons");
+        letterBtn = $("<button>");
       // 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color".
           letterBtn.addClass("letter-button letter letter-button-color");
       // 4. Then give each "letterBtn" an attribute called "data-letter", with a value eqaual to "letters[i]"
@@ -81,8 +81,8 @@
       // 5. Then give each "letterBtn" a text equal to "letters[i]".
           letterBtn = letters[i];
       // 6. Finally, append each "letterBtn" to the "#buttons" div (provided).
-    }      $( ).append( "<strong>Hello</strong>" );
-
+       $(letterBtn).append( "#buttons" );
+      } 
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
       // MAJOR TASK #2: ATTACH ON-CLICK EVENTS TO "LETTER" BUTTONS

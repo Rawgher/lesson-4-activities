@@ -99,14 +99,29 @@ var isCalculated = false;
 
 
 function initializeCalculator () {
+    var firstNumber = "";
+    var secondNumber = "";
+    var operator = "";
+    var isCalculated = false;
+    var isCalculated = false;
 
+    $("#first-number, #second-number, #operator, #result").empty();
 }
 
 $(".number").on("click", function (){
+  if (isCalculated) {
+    return false;
+  }
 
-// $(".btn").onCLick(){
-//   pressed=$(this).attr("value");
+  if (isOperatorChosen) {
+    secondNumber += $(this).val();
+    $("second-number").text(secondNumber);
+  }
 
+else {
+  firstNumber += $(this).val();
+  $("#first-number").text(firstNumber);
+}
 });
 
 $(".operator").on("click", function (){
@@ -125,21 +140,21 @@ operate = function(firstNumber, secondNumber, operator) {
 }
 });
 
-$(".clear").on("click", function (){
-// $('#button-clear').click(function(){
-// 		$('#first-number').val('');
-// 		$('#operator').val('');
-// 		$('#second-number').val("");
-// 		$('#result').val('');
-// 	});
-});
+$('#button-clear').click(function(){
+    var firstNumber = "";
+    var secondNumber = "";
+    var operator = "";
+    var isCalculated = false;
+    var isCalculated = false;
+	});
+
 
 
 initializeCalculator();
 
 
-
 });
+
 
 </script>
 

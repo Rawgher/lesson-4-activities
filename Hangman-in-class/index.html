@@ -9,12 +9,54 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="game.js"></script>
+        
+    
+    
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <h1>Hang Man</h1>
+
+        <div class="container">
+            <div class ="row">
+                <div class="col-md-6 col-sm-12">
+                    <img src="">
+
+                </div>
+
+
+                <div class="col-md-6 col-sm-12">
+                <p>press any key</p>
+                <p id="wins">wins</p>
+                <p>currentword</p>
+                <p id="answer">------</p>
+                <p>guesses remaining</p>
+                <p id="guessesLeft">10</p>
+                <p id="lettersUsed">lettters already used</p>
+
+                </div>
+
+
+
+            </div>
+                
+                
+                document.getElementById("wins").innerHTML = "Wins: " + wins;
+                document.getElementById("guessesLeft").innerHTML = "Guesses left: " + guessesLeft;
+                document.getElementById("lettersUsed").innerHTML = "Letters already used: " + lettersUsed;
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        </div>
+        
         
         <script src="" async defer></script>
     </body>
